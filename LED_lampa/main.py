@@ -1,8 +1,10 @@
+#importovanie kniznic
 from machine import Pin
 import time
 
+#nastavenie komponentov ako objektov pre to aby python vedel s nimi pracovat
 led = Pin(15, Pin.OUT)                   
-button = Pin(13, Pin.IN, Pin.PULL_UP)    #Create button object from Pin13 , Set GP13 to input
+button = Pin(13, Pin.IN, Pin.PULL_UP) 
 
 #vytvorenie kyvadlovej funkcie pre zmenu stavu LED na inu hodnotu voci hodnote ktoru malo ako poslednu
 def reverseGPIO():
